@@ -1,0 +1,151 @@
+ git init	Cria um novo repositório Git na pasta atual.
+git clone URL	Baixa um repositório existente do GitHub ou outro servidor.
+git status	Mostra o estado dos arquivos (modificados, adicionados, não rastreados etc.).
+git add arquivo	Adiciona um arquivo específico para o próximo commit.
+git add .	Adiciona todas as alterações da pasta atual para o próximo commit.
+git commit -m "mensagem"	Salva as alterações adicionadas no histórico do Git.
+git log	Exibe o histórico completo de commits.
+git log --oneline	Mostra o histórico resumido em uma linha por commit.
+git diff	Mostra as diferenças entre versões dos arquivos.
+git remote -v	Lista os repositórios remotos configurados (ex.: GitHub).
+git remote add origin URL	Conecta seu projeto local a um repositório remoto.
+git remote set-url origin URL	Altera o endereço do repositório remoto.
+git remote remove origin	Remove a conexão com o repositório remoto.
+git push origin main	Envia seus commits para o GitHub.
+git pull origin main	Baixa e integra alterações do GitHub ao projeto local.
+git fetch	Baixa alterações do remoto sem aplicá-las.
+git branch	Lista as branches existentes.
+git branch nome	Cria uma nova branch.
+git switch nome	Troca para outra branch.
+git switch -c nome	Cria e já muda para a nova branch.
+git checkout nome	Troca de branch (forma mais antiga).
+git merge nome	Junta uma branch com a branch atual.
+git restore arquivo	Desfaz alterações locais em um arquivo.
+git restore .	Desfaz alterações locais em todos os arquivos.
+git reset HEAD arquivo	Remove um arquivo da área de preparação (add).
+git reset --soft HEAD~1	Desfaz o último commit mantendo as alterações.
+git reset --hard HEAD~1	Apaga o último commit e suas alterações.
+git stash	Guarda alterações temporariamente sem fazer commit.
+git stash pop	Recupera as alterações guardadas no stash.
+git stash list	Lista os stashes salvos.
+git tag v1.0	Cria uma marcação (tag) de versão.
+git push origin v1.0	Envia uma tag para o GitHub.
+git branch -d nome	Apaga uma branch já mesclada.
+git branch -D nome	Força a exclusão de uma branch.
+git config --global user.name "Nome"	Define seu nome para os commits.
+git config --global user.email "email"	Define seu e-mail para os commits.
+git config --list	Mostra todas as configurações do Git.
+
+feat
+
+Nova funcionalidade.
+
+git commit -m "feat: adicionar tela de login"
+
+Exemplo:
+
+Criar cadastro de usuários.
+Adicionar busca por produtos.
+fix
+
+Correção de bug.
+
+git commit -m "fix: corrigir erro no cálculo do frete"
+
+Exemplo:
+
+Corrigir botão que não clicava.
+Ajustar validação de formulário.
+docs
+
+Alteração apenas na documentação.
+
+git commit -m "docs: atualizar README com instruções de instalação"
+
+Exemplo:
+
+Editar README.
+Adicionar comentários de documentação.
+style
+
+Mudanças de formatação sem alterar o funcionamento.
+
+git commit -m "style: ajustar indentação do código"
+
+Exemplo:
+
+Corrigir espaçamento.
+Organizar código com Prettier.
+refactor
+
+Melhoria interna do código sem adicionar funcionalidades nem corrigir bugs.
+
+git commit -m "refactor: simplificar lógica de autenticação"
+
+Exemplo:
+
+Reorganizar funções.
+Melhorar legibilidade do código.
+test
+
+Criação ou alteração de testes.
+
+git commit -m "test: adicionar testes para login"
+
+Exemplo:
+
+Criar testes unitários.
+Atualizar testes existentes.
+chore
+
+Tarefas de manutenção.
+
+git commit -m "chore: atualizar dependências do projeto"
+
+Exemplo:
+
+Atualizar bibliotecas.
+Configurar ESLint.
+Ajustar arquivos de build.
+perf
+
+Melhoria de desempenho.
+
+git commit -m "perf: otimizar consulta ao banco de dados"
+
+Exemplo:
+
+Reduzir tempo de carregamento.
+Melhorar consumo de memória.
+build
+
+Mudanças relacionadas ao processo de build.
+
+git commit -m "build: configurar webpack para produção"
+
+Exemplo:
+
+Alterar Webpack.
+Ajustar Vite.
+Configurar Docker.
+ci
+
+Mudanças na integração contínua.
+
+git commit -m "ci: adicionar workflow do GitHub Actions"
+
+Exemplo:
+
+Configurar GitHub Actions.
+Configurar Jenkins.
+revert
+
+Reverter um commit anterior.
+
+git commit -m "revert: remover implementação de login social"
+
+Exemplo:
+
+Desfazer uma funcionalidade que causou problemas.
+
+Edisander Neri Machado da Silva
